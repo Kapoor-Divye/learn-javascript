@@ -2,4 +2,8 @@
 // "Something went wrong, please try again" in the paragraph
 // that has the id="error".
 
+msg = "Something went wrong, please try again";
 
+function renderOut() {
+  document.getElementById("error").textContent = msg;
+}

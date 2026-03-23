@@ -4,6 +4,8 @@ const inputBtn = document.getElementById("input-btn")
 
 // Push the value "www.awesomelead.com" to myArray when the input button is clicked
 
+myLeads.push("www.awesomelead.com")
+
 inputBtn.addEventListener("click", function() {
     console.log("Button clicked!")
 })

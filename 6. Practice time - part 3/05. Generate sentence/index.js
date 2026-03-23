@@ -9,5 +9,12 @@
 
 // Use both a for loop and a template string to solve the challenge
 function generateSentence(desc, arr) {
-    
+    let sentence = `The ${arr.length} ${desc} are `
+    for (let i = 0; i < arr.length; i++) {
+        sentence += `${arr[i]}, `
+    }
+console.log(sentence.slice(0, -2))
 }
+
+generateSentence("largest countries", ["China", "India", "USA"])
+generateSentence("best fruits", ["Apples", "Bananas"])

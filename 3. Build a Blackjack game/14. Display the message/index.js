@@ -6,6 +6,7 @@ let isAlive = true
 let message = ""
 
 // 1. Store the message-el paragraph in a variable called messageEl
+messageEl = document.getElementById("message-el")
 
 function startGame() {
     if (sum <= 20) {
@@ -18,5 +19,6 @@ function startGame() {
         isAlive = false
     }
     // 2. Display the message in the messageEl using messageEl.textContent
+    messageEl.textContent = message
     console.log(message)    
 }

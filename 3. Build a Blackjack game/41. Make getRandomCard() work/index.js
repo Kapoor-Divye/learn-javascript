@@ -8,10 +8,14 @@ let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+console.log(cards)
 
 // Make this function return a random number between 1 and 13
 function getRandomCard() {
-    return 5
+    let randomCard = Math.floor(Math.random() * 13) + 1
+    if(randomCard > 10) return 10
+    else if(randomCard === 1) return 11
+    else return randomCard
 }
 
 function startGame() {

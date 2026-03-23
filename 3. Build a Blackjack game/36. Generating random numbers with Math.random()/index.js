@@ -1,4 +1,4 @@
-let randomNumber = Math.random()
+let randomNumber = Math.random() * 6
 
 console.log(randomNumber)
 
@@ -7,6 +7,6 @@ console.log(randomNumber)
 
 What does Math.random() do?
 
-Your answer: 
+Your answer: Generates a random floating-point number between 0 (inclusive) and 1 (exclusive).
 
 */
